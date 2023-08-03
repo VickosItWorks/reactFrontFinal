@@ -1,0 +1,73 @@
+/* .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.heart-button:hover,
+.plus-button:hover {
+    color: #ff0000;
+} */
+
+/* second change */
+/* .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .heart-button,
+  .plus-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .heart-button::before,
+  .plus-button::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #777;
+    transition: background-color 0.3s ease;
+  }
+  
+  .heart-button:hover::before {
+    background-color: #ff0000;
+  }
+  
+  .plus-button::before {
+    position: relative;
+    background-color: #777;
+    transform: rotate(45deg);
+  }
+  
+  .plus-button::before::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+  } */
+
+  /* .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .heart-button,
+  .plus-button {
+    border: none;
+    background-color: transparent; 
+    cursor: pointer;
+    margin-right: 10px;
+  }
+   */
