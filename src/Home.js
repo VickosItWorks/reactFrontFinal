@@ -1,8 +1,8 @@
 import React from "react";
 import './Home.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Moviewatch from "./Moviewatch";
 import { styled } from "styled-components";
 
@@ -26,7 +26,7 @@ const Home = () => {
         event.preventDefault();
         const isUserLogged = JSON.parse(sessionStorage.getItem('isLogged'));
 
-        if(isUserLogged?.logged){
+        if (isUserLogged?.logged) {
             const inputName = document.getElementById("search");
             setMovieName(inputName.value);
         } else {
@@ -38,18 +38,18 @@ const Home = () => {
         <h1>Movie Database</h1>
 
         <div className="buttons-container">
-                <button className="nav-button" onClick={() => navigate('/user')}>
-                    <i class="bi bi-person-fill"></i>
-                </button>
-                <button className="nav-button" onClick={() => navigate('/login')}>Login</button>
-            </div>
+            <button className="nav-button" onClick={() => navigate('/user')}>
+                <i class="bi bi-person-fill"></i>
+            </button>
+            <button className="nav-button" onClick={() => navigate('/login')}>Login</button>
+        </div>
 
         <form className="search-form">
-            <input type="text" id="search" name="search" placeholder="Search movies..."/>
-            <Largebutton onClick= {movieValue} type="submit">Search</Largebutton>
+            <input type="text" id="search" name="search" placeholder="Search movies..." />
+            <Largebutton onClick={movieValue} type="submit">Search</Largebutton>
         </form>
 
-        <Moviewatch name={movieName}/>
+        <Moviewatch name={movieName} />
 
     </div>)
 }
